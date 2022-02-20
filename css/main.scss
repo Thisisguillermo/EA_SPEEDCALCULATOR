@@ -333,13 +333,13 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.buttons {
+.num_pad_button {
   border-style: solid;
   border-color: #000;
-  border-width: 0px 1px 1px 0px;
+  border-width: 1px 0px 0px 1px;
 }
 
-.buttons > div {
+.num_pad_button > div {
   border-top: 1px solid black;
   border-right: 1px solid black;
 }
