@@ -328,9 +328,13 @@ body {
   height: 50%;
 }
 
+.number-pad {
+    
+}
+
 .number-pad-buttons {
   box-sizing: border-box;
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
