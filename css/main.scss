@@ -331,15 +331,12 @@ body {
 .number-pad-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  border-top: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .num_pad_button {
-  border-style: solid;
-  border-color: #000;
-  border-width: 1px 0px 0px 1px;
-}
-
-.num_pad_button > div {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
