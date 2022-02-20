@@ -245,6 +245,7 @@ body {
   border-style: solid;
   border-color: #00afe4;
   background-color: #c5c3c3;
+  padding-bottom: 1px;
   display: block;
   width: 30vw;
   height: 70vh;
