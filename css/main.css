@@ -228,28 +228,34 @@ textarea {
   }
 }
 /* ==========================================================================
-   Guillermo start from here
+   Guillermo starts from here
    ========================================================================== */
-.main {
-  border-style: solid;
-  border-color: #df1919;
-}
-
-/* Guillermo starts from here*/
 :root {
   display: grid;
   justify-content: center;
+  --background_body_colour_primary: linear-gradient(to top, #00bfff, #33adff, #8691ff, #cc67f5, #ff00be);
+  --background_body_colour_primary_darkmode: linear-gradient(to top, #373d3f, #21445b, #2a4476, #5d3781, #94046f);
+  --background_equal_button_colour_: linear-gradient(to top, #00bfff, #33adff, #8691ff, #cc67f5, #ff00be);
+  --text_colour: white;
+  --accent_line_colour: #000000;
+  --num_pad_button_colour_primary: #8900E6;
+  --num_pad_button_colour_secondary: ;
+}
+
+html {
+  height: 100vh;
+  background: var(--background_body_colour_primary);
 }
 
 body {
   border-style: solid;
-  border-color: #00afe4;
-  background-color: #c5c3c3;
+  border-color: white;
   padding-bottom: 1px;
   display: block;
   width: 30vw;
   height: 70vh;
   margin: 15vh 0vh 0vh 0vh;
+  color: var(--text_colour);
 }
 
 .hero-image {
@@ -289,8 +295,8 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-top: 1px solid #b12a2a;
-  border-right: 1px solid #d61919;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .num_pad_button {
@@ -302,6 +308,15 @@ body {
   height: 7.6vh;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+  background-color: var(--num_pad_button_colour_primary);
+}
+
+#equal_button {
+  background: var(--background_equal_button_colour_);
+}
+
+.operation_key {
+  background-color: #EC2A9A;
 }
 
 .num_pad_button:hover {
