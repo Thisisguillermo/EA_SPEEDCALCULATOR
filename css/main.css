@@ -262,7 +262,7 @@ html {
 
 body {
   border-style: solid;
-  border-color: white;
+  border-color: black;
   padding-bottom: 1px;
   display: block;
   width: 30vw;
@@ -330,11 +330,20 @@ body {
 }
 
 .operation_key {
-  background-color: #EC2A9A;
+  background-color: #ff6cc2;
 }
 
 .num_pad_button:hover {
-  background-color: yellowgreen;
+  background-color: #aeff00;
+}
+
+.num_pad_button:active {
+  background-color: #33adff;
+}
+
+#equal_button:hover {
+  background: #ff6cc2;
+  transition: 1s ease-in;
 }
 
 /*# sourceMappingURL=main.css.map */
