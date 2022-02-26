@@ -424,3 +424,17 @@ body {
     background: var(--background_body_colour_primary_darkmode);
   }
 }
+
+@media screen and (max-width: 400px) {
+
+  html {
+    height: 100%;
+  }
+  
+  body {
+  width: 100vw;
+  height: 100%;
+  margin: 7rem 0rem 0rem 0rem ;
+  }
+
+}
