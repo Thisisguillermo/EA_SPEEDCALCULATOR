@@ -15,7 +15,21 @@ let action = numPadbutton.map(function (numPadbuttonTwo) {
                 mainDisplay.innerText = "";
                 break;
             case "ᐊ":
-                subDisplay.innerText = subDisplay.innerText.slice(0, -1);
+                if (subDisplay.innerText) {
+                    subDisplay.innerText = subDisplay.innerText.slice(0, -1);
+                }
+                break;
+            case "=":
+                // Oh and.... Warning: Executing JavaScript from a string is an enormous security risk. It is far too easy for a bad actor to run arbitrary code when you use eval(). See Never use eval()!, below.  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#never_use_eval!)
+
+                // subDisplay.innerText = eval(subDisplay.innerText) werkt niet omdat ik in principe alleen een assignment aangeef. in plaats van declare.
+                // En ik laat daaar bij ook gelijk het resultaat in subDisplay terugkeren, terwijl het resultaat in mainDisplay gegeven moet worden.....
+                try {
+                    const whatever = eval(subDisplay.innerText);
+                    mainDisplay.innerText = whatever;   
+                } catch {
+                    mainDisplay.innerText = "Syntax Error!"
+                }
                 break;
 
             default:
