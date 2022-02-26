@@ -244,15 +244,18 @@ textarea {
   display: grid;
   justify-content: center;
   --background_body_colour_primary: linear-gradient(to top, #00bfff, #33adff, #8691ff, #cc67f5, #ff00be);
-  --background_body_colour_primary_darkmode: linear-gradient(to top, #373d3f, #21445b, #2a4476, #5d3781, #94046f);
   --background_equal_button_colour_: linear-gradient(to top, #00bfff, #33adff, #8691ff, #cc67f5, #ff00be);
+  --operation_key_background-colour: #ff6cc2;
+  --num_pad_button_hover_colour: #aeff00;
+  --num_pad_button_hover_colour: #33adff;
   --text_colour: white;
-  --accent_line_colour: #000000;
+  --background_body_colour_primary_darkmode: linear-gradient(to top, #373d3f, #21445b, #2a4476, #5d3781, #94046f);
+  --accent_line_colour: #ffffff;
   --num_pad_button_colour_primary: #8900E6;
   --num_pad_button_colour_secondary: ;
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 html {
@@ -261,9 +264,6 @@ html {
 }
 
 body {
-  border-style: solid;
-  border-color: black;
-  padding-bottom: 1px;
   display: block;
   width: 30vw;
   height: 70vh;
@@ -285,21 +285,20 @@ body {
 
 .display {
   border-style: solid;
-  border-color: #c8ff00;
+  border-color: var(--accent_line_colour);
+  border-width: 1px 1px 0px 1px;
   width: 100%;
   height: 12vh;
 }
 
 .sub-display {
-  border-style: solid;
-  border-color: #ff0000;
+  text-align: left;
   width: 100%;
   height: 50%;
 }
 
 .main-display {
-  border-style: solid;
-  border-color: #0043fa;
+  text-align: right;
   width: 100%;
   height: 50%;
 }
@@ -308,8 +307,8 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 1px solid var(--accent_line_colour);
+  border-right: 1px solid var(--accent_line_colour);
 }
 
 .num_pad_button {
@@ -319,8 +318,8 @@ body {
   box-sizing: border-box;
   width: auto;
   height: 7.6vh;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 1px solid var(--accent_line_colour);
+  border-bottom: 1px solid var(--accent_line_colour);
   background-color: var(--num_pad_button_colour_primary);
   cursor: pointer;
 }
@@ -330,20 +329,15 @@ body {
 }
 
 .operation_key {
-  background-color: #ff6cc2;
+  background-color: var(--operation_key_background-colour);
 }
 
 .num_pad_button:hover {
-  background-color: #aeff00;
+  background-color: var(--num_pad_button_hover_colour);
 }
 
 .num_pad_button:active {
-  background-color: #33adff;
-}
-
-#equal_button:hover {
-  background: #ff6cc2;
-  transition: 1s ease-in;
+  background-color: var(--num_pad_button_hover_colour);
 }
 
 /*# sourceMappingURL=main.css.map */
