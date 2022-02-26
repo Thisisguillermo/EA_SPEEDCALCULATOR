@@ -245,13 +245,13 @@ textarea {
   justify-content: center;
   --background_body_colour_primary: linear-gradient(to top, #00bfff, #33adff, #8691ff, #cc67f5, #ff00be);
   --background_equal_button_colour_: linear-gradient(to top, #00bfff, #33adff, #8691ff, #cc67f5, #ff00be);
-  --operation_key_background-colour: #ff6cc2;
+  --operation_key_background-colour: #fd21a2;
   --num_pad_button_hover_colour: #aeff00;
   --num_pad_button_hover_colour: #33adff;
   --text_colour: white;
-  --background_body_colour_primary_darkmode: linear-gradient(to top, #373d3f, #21445b, #2a4476, #5d3781, #94046f);
   --accent_line_colour: #ffffff;
-  --num_pad_button_colour_primary: #8900E6;
+  --num_pad_button_colour_primary: #7417DF;
+  --background_body_colour_primary_darkmode: linear-gradient(to top, #373d3f, #21445b, #2a4476, #5d3781, #94046f);
   --num_pad_button_colour_secondary: ;
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
@@ -281,6 +281,7 @@ body {
 
 .display, .display > * {
   box-sizing: border-box;
+  font-size: 1.2em;
 }
 
 .display {
@@ -338,6 +339,12 @@ body {
 
 .num_pad_button:active {
   background-color: var(--num_pad_button_hover_colour);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: var(--background_body_colour_primary_darkmode);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
