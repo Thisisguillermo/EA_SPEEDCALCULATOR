@@ -346,7 +346,7 @@ body {
     background: var(--background_body_colour_primary_darkmode);
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 536px) {
   html {
     height: 100%;
   }
