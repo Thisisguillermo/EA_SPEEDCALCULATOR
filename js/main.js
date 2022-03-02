@@ -2,6 +2,8 @@ const subDisplay = document.getElementById("sub-display");
 const mainDisplay = document.getElementById("main-display");
 const numPadbutton = Array.from(document.getElementsByClassName("num_pad_button"));
 
+// Asking myself if these "functions" could be different and made smaller. Lost a lot of time in process. figuring out other possibilities.
+
 let action = numPadbutton.map(function (numPadbuttonTwo) {
     numPadbuttonTwo.addEventListener('click', (e) => {
         console.log(e);
