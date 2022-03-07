@@ -6,6 +6,7 @@ Calculate your velocity, measure your dimensions, calculate the four forcers, li
 
 
 ---
+![](img/EA_Speedcalculator.gif)
 [![Screenshot-2022-03-02-at-19-56-21-https-thisisguillermo-github-io.png](https://i.postimg.cc/8c5bM5KM/Screenshot-2022-03-02-at-19-56-21-https-thisisguillermo-github-io.png)](https://postimg.cc/r0BWL8Lw)
 
 [![Screenshot-2022-03-02-at-19-56-44-https-thisisguillermo-github-io.png](https://i.postimg.cc/xCjGV8Sh/Screenshot-2022-03-02-at-19-56-44-https-thisisguillermo-github-io.png)](https://postimg.cc/8F3fh1cm)
