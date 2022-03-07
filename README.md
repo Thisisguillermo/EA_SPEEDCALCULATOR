@@ -12,5 +12,3 @@ Calculate your velocity, measure your dimensions, calculate the four forcers, li
 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-https://user-images.githubusercontent.com/43880437/157103583-c79edcc8-0f16-467c-bf5d-31f23f864c5a.mp4
-
